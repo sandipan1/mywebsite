@@ -33,7 +33,7 @@ Most robots are position controlled and not torque controlled.
 
 For lightweight arms electric motors are used. 
 
-$$ \tau_{motor} = k_ti $$
+$ \tau_{motor} = k_ti $
 
   k_t  is motor torque constant.
 However this relationship doesn't hold true when if the gear ratio is high(say >>10) . To achieve reasonable cost and weight , small electric motors with large gear reductions are choosen and this comes with number of dynamic effects that are difficult to model - including backlash, vibration and friction
@@ -51,9 +51,9 @@ Position sensor (encoder/potentiometer) are inexpensive, accurate and robust. Th
 
 A desired trajectory $$ q^d(t) $$ can be tracked using PID control
 
-$$ \tau = k_q(q^d - q) + k_d(q^d - q) + k_i \int (q^d - q)dt $$
+$ \tau = k_q(q^d - q) + k_d(q^d - q) + k_i \int (q^d - q)dt $
 
-$$ k_p, k_d, k_i $$ are position, velocity and integral gains. 
+$ k_p, k_d, k_i $ are position, velocity and integral gains. 
 > PID gains for each joint are chosen independently and are constant (not gain-scheduled)
 
 
