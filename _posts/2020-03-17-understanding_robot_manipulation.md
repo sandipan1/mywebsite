@@ -1,11 +1,12 @@
 ---
-toc: true
 layout: post
 description: Summary of various aspects of robot manipulation problem
-categories: [markdown][robotics]
+categories: [markdown]
 title: Understanding Robot Manipulation
 ---
 
+
+## Problems with Manipulation
 
 The problems in manipulation require significant interactions between perception, planning and control
 > Geometric perception : to understand local geometric of the objects and environment 
