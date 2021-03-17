@@ -84,3 +84,15 @@ This observation suggests a natural iterative scheme, where we start with some i
 
 ### Point cloud segmentation
 Not all outliers are due to bad returns from the depth camera, very often they are due to other objects in the scene. Even in the most basic case, our object of interest will be resting on a table or in a bin. If we know the geometry of the table/bin a priori, then we can subtract away points from that region. We can use some algorithm to "segment" the scene in a number of possible objects, and run registration independently on each segment. There are numerous geometric approaches to segmentation
+
+
+## Data driven methods for Bin Picking 
+Bin picking has potentially very important applications in industries such as logistics, and there are significantly more refined versions of this problem. For example, we might need to pick only objects from a specific class, and/or place the objects in known position 
+
+> Generating Random Cluttered Scenes
+If our goal is to test a diversity of bin picking situations, then the first task is to figure out how to generate diverse simulations. How should we populate the bin full of objects? 
+1. Grasp selection
+2. Point cloud pre-processing
+3. Estimating normals and local curvature
+4. Evaluating a candidate grasp
+5. Generating grasp candidates
